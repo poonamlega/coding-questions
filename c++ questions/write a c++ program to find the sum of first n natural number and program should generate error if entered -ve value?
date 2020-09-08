@@ -1,4 +1,5 @@
 
+write a c++ program to find the sum of first n natural number and program should generate error if entered -ve value?  
 
 #include <iostream>
 
