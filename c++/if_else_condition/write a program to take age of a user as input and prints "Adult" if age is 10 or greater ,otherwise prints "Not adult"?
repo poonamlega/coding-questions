@@ -1,0 +1,21 @@
+
+ques : write a program to take age of a user as input and prints "Adult" if age is 10 or greater ,otherwise prints "Not adult"?
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n ;
+    cout<< "Enter the age "<< endl;
+    cin >> n;
+    if( n < 18)
+    {cout<<"Not Adult";
+}
+ else
+ {
+     cout << "Adult";
+ }
+ return 0 ;
+}
