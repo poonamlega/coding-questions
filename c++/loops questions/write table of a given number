@@ -1,0 +1,17 @@
+//ques : write table of a given number :
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i ,n ,t;
+    n= 20;
+    cout<<"enter a number :"<<endl;
+    cin>>t;
+    cout<<"the table is "<<endl;
+        for(i=1; i <=n;i++)
+          cout<< t<<"*"<<i   <<" = " << (  t*i) <<endl;
+   
+    return 0;
+    }
