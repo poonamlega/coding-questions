@@ -1,0 +1,23 @@
+//ques : write a program that takes 10 pairs of numbers from users .for every pair(x,y) it prints x/y.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,x,y;
+    
+    cout<<"Enter the pair of x and y"<<endl;
+    for(i = 0; i < 10; i++)
+    {
+        cin>>x>>y;
+        if(y !=0)
+        {cout<< i  <<" "<<"value of x is:   "<< x<< endl<<"value of y is     "<<y<<endl;
+        cout<<"value of x/y is  "<<x/y<<endl<<endl;
+        }
+        
+    else
+       cout<<"Enter a valid value of y "<<endl<<endl;
+    }
+    return 0;
+        
+    }
