@@ -1,0 +1,25 @@
+// ques : write a program using switch statement to incease or decrease value of x and y axis according to input?
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int y,x;
+x = 0; 
+y = 0;
+char move ;
+cout<< "enter the value of move"<<endl;
+cin>>move;
+switch(move)
+ { case 'L': x--; cout<<"now the value is  "; cout<<x;cout<<" from 0";
+        break;
+  case 'R': x++ ;cout<<"now the value is  "; cout<<x;cout<<" from 0";
+        break;
+  case 'U': y++ ; cout<<"now the value is "; cout<<y;cout<<" from 0";
+        break;
+  case 'D': y--; cout<<"now the value is  "; cout<<y;cout<<" from 0";
+        break;
+  default:  cout<<"The input is invalid .";
+ }
+ return 0 ;
+}
