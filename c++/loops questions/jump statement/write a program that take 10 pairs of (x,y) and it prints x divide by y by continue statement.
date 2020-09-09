@@ -1,0 +1,20 @@
+ques : write a program that take 10 pairs of (x,y) and it prints x divide by y by continue statement.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,x,y;
+    
+    cout<<"Enter the pair of x and y"<<endl;
+    for(i = 0; i < 10; i++)
+    {
+        cin>>x>>y;
+        if(y ==0)
+        { cout<<"invalid"<<endl;continue;}
+        cout<<i  <<" "<<"value of x is:   "<< x<< endl<<"value of y is     "<<y<<endl;
+        cout<<"value of x/y is  "<<x/y<<endl<<endl;
+    }
+    return 0;
+        
+    }
