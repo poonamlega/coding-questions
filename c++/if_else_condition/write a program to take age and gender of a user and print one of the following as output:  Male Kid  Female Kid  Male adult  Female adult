@@ -1,0 +1,5 @@
+write a program to take age and gender of a user and print one of the following as output:
+ Male Kid
+ Female Kid
+ Male adult
+ Female adult
