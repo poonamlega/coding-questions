@@ -1,0 +1,32 @@
+
+ ques : write a program to take age and gender of a user and print one of the following as output:
+ Male Kid
+ Female Kid
+ Male adult
+ Female adult
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n ;
+    char gender;
+    cout<< "Enter the age "<< endl;
+    cin >> n;
+    cout<<"Enter the gender"<<endl;
+    cin>>gender;
+      if( n < 18)
+            { if(gender == 'M' )
+                  cout<<"Male Kid";
+              else
+                  cout<<"Female Kid";
+            }
+     else
+           {
+               if(gender == 'M' )
+                   cout<<"Male adult";
+               else
+                   cout<<"Female adult";
+           }
+ return 0 ;
+}
