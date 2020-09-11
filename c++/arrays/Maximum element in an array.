@@ -1,0 +1,23 @@
+Maximum element in an array.
+
+//Maximum element in an array :
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+ int arr[] = {2,3,4,5,6,7,8,10};
+ int n,i,t,j;
+ n = sizeof(arr)/sizeof(arr[0]);
+ cout<< "Maximum no of element in an array is :   "<< n<<endl;
+ int res = arr[0];
+  for(int i = 0;i<=n;i++)
+  res = max(res,arr[i]);
+      
+      cout<<res;
+
+  
+ return 0;
+}
