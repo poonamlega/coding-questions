@@ -1,0 +1,19 @@
+//Maximum and minimum element in vector. 
+
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+int main() 
+{ 
+    // Get the vector 
+    vector<int> a = { 1, 45, 54, 71, 76, 12 }; 
+ 
+   
+    cout << "\nMin Element = "
+         << *min_element(a.begin(), a.end()); 
+  
+    // Find the max element 
+    cout << "\nMax Element = "
+         << *max_element(a.begin(), a.end()); 
+    return 0; 
+} 
