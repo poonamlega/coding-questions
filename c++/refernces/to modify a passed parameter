@@ -1,0 +1,55 @@
+//to modify a passed parameter:
+// original code without the use of references 
+
+#include<bits/stdc++.h>
+using namespace std;
+void swap(int x,int y)
+{
+    int temp =x;
+    x=y;
+    y= temp;
+    
+}
+int main()
+{
+    int x=10,y=15;
+    swap(x,y);
+    cout<<"initial value of is x 10 and y is 15"<<endl;
+    cout<<"value of x  "<< x<<endl<< "value of y  "<<y;
+    return 0 ;
+    
+}
+
+//output
+initial value of is x 10 and y is 15  //so here we can see that even after using swap fun() values of x and y remain unchanged.
+value of x  10
+value of y  15 
+
+  
+  // changed code using the refernces :
+  
+#include<bits/stdc++.h>
+using namespace std;
+void swap(int  & x,int & y)
+{
+    int temp =x;
+    x=y;
+    y= temp;
+    
+}
+int main()
+{
+    int x=10,y=15;
+    swap(x,y);
+    cout<<"initial value of is x 10 and y is 15"<<endl;
+    cout<<"value of x  "<< x<<endl<< "value of y  "<<y;
+    return 0 ;
+    
+    
+    
+    //output
+    initial value of is x 10 and y is 15
+value of x  15
+value of y  10  // as this is required output
+    
+}
