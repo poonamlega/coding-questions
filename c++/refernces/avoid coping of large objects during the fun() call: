@@ -1,0 +1,17 @@
+//avoid coping of large objects during the fun() call:
+
+#include<bits/stdc++.h>
+using namespace std;
+  void print( vector<int> & v)    // here if we dont use the refernce  memory and time taken will be more while coping the value so we put both the values of v elemnt same
+  {
+      for(auto x:v)
+      cout<<x<<" ";  }
+ 
+ int main()
+ {
+     vector<int>v;
+     for(int i=0;i<100;i++)
+     v.push_back(i);
+     print(v);
+     return 0 ;
+ }
