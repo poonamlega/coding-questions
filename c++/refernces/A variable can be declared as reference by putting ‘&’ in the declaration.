@@ -1,0 +1,28 @@
+ //A variable can be declared as reference by putting ‘&’ in the declaration.
+ 
+ #include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    
+    int x=10;
+    int & y = x;
+    cout<<y<<" "<< "value of y " <<endl;
+    x = x+5;
+    cout<<y<< "value of y  "<<endl;
+    y= y+5;
+    cout<<x<<"value of x"<<endl;
+    return 0;
+    
+    
+    //output
+    10 value of y 
+    15value of y  
+    20value of x
+
+    
+    
+    
+
+    
+}
