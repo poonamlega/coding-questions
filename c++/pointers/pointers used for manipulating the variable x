@@ -1,0 +1,22 @@
+//pointers used for manipulating the variable x
+
+#include<bits/stdc++.h>                                     //output
+using namespace std;
+int main()                                                 //value of *ptr in starting 10
+                                                            //  value of ptr 0x7ffe322ab9fc
+                                                            //   value of *ptr after changing x 40
+                                                            //  value of *ptr after changing the ptr 
+{
+    int x=10;
+    int *ptr = &x;
+    
+    cout<<"value of *ptr in starting"<<" "<<*ptr<<endl;
+     cout<<"value of ptr"<<" "<<ptr<<endl;
+     
+     x=x+30;
+      cout<<"value of *ptr after changing x"<<" "<<*ptr<<endl;
+     
+     *ptr =*ptr+40;                                                                  //here pointer is used to change value  of x
+      cout<<"value of *ptr after changing the ptr value"<<" "<<*ptr<<endl;
+     return 0;
+}
