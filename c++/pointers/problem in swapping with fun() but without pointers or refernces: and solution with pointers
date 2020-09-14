@@ -1,0 +1,75 @@
+//problem in swapping with fun() but without pointers or refernces and solution with pointers:
+
+#include<bits/stdc++.h>
+using  namespace std;
+
+void swap(int x,int y)
+{
+     int temp= x;
+    x=y;
+    y=temp;
+}
+int main()
+{   int x=10,y=20;
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<"  before the swap"<<endl;
+    swap(x,y);
+   cout<<"value of x  "<<x<<"  value of y  "<<y<<"  after the swap"<<endl;
+    return 0;
+    }
+    
+    //output 
+    //value of x  10  value of y  20  before the swap  //so here we can see that value is not swapped because it took value which is in its scopes rather thn other latter values
+//value of x  10  value of y  20  after the swap
+
+
+//1st solution
+#include<bits/stdc++.h>
+using  namespace std;
+
+void swap(int & x,int & y)
+{
+     int temp= x;
+    x=y;
+    y=temp;
+}
+int main()
+{
+    int x=10,y=20;
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<"  before the swap"<<endl;
+    
+    swap(x,y);
+   
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<"  after the swap"<<endl;
+    return 0;
+    
+}
+
+//output
+//value of x  10  value of y  20  before the swap
+//value of x  20  value of y  10  after the swap
+
+//2nd solution with pointers:
+#include<bits/stdc++.h>
+using  namespace std;
+
+void swap(int *p1,int *p2)
+{
+     int temp= *p1;
+    *p1=*p2;
+    *p2=temp;
+}
+int main()
+{
+    int x=10,y=20;
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<"  before the swap"<<endl;
+    
+    swap(&x,&y);
+   
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<"  after the swap"<<endl;
+    return 0;
+    
+}
+
+//output
+//value of x  10  value of y  20  before the swap
+//value of x  20  value of y  10  after the swap
