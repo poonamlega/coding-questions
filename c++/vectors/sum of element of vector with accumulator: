@@ -1,0 +1,15 @@
+//sum of element of vector with accumulator:
+
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+int main() 
+{ int i,sum,n;
+ 
+    vector<int>a { 1, 4, 4, 1, 5, 2 }; 
+  
+  sum=0;
+  sum= accumulate(a.begin(),a.end(),sum);  //here function accumulator is used for finding the sum of element of vector instead of for loop ,so it might save some time in execution.
+   cout<<"The sum of vector is "<< sum;    //accumulator is a build in fun in cpp and take 3 argument : initial size, final size and initial sum . 
+    return 0; 
+} 
