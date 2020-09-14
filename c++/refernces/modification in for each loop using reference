@@ -1,0 +1,38 @@
+//modification in for each loop using reference
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{ int x;
+    vector<int> vect{1,2,3,4,5,6};
+    cout<<"original vector"<<endl;
+    for(auto  x: vect)
+    cout<<x<<" " ;
+     cout<<endl<<"after changes in each element"<<endl;
+    for(auto & x: vect)                                           // & used for changes in each element remain same through out.
+    x= x+10;
+    cout<<x<<" ";
+    cout<<endl<<"after changes in each element use of loop"<<endl;
+    for(auto x: vect)
+    cout<<x<<" ";
+    return 0;
+    
+    
+}
+
+//output
+original vector
+1 2 3 4 5 6 
+after changes in each element
+0 
+after changes in each element use of loop
+11 12 13 14 15 16 
+
+
+//the case in which refernce was not used:
+original vector
+1 2 3 4 5 6 
+after changes in each element
+0 
+after changes in each element use of loop
+1 2 3 4 5 6 
