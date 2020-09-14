@@ -1,0 +1,20 @@
+//swapping two variable
+
+//output
+//value of x  10  value of y  20
+//value of x  20  value of y  10
+
+#include<bits/stdc++.h>
+using  namespace std;
+int main()
+{
+    int x=10,y=20;
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<endl;
+    
+    int temp= x;
+    x=y;
+    y=temp;
+    cout<<"value of x  "<<x<<"  value of y  "<<y<<endl;
+    return 0;
+    
+}
