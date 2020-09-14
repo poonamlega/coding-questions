@@ -1,0 +1,14 @@
+//ptr and *ptr difference (basic of pointers)
+
+#include<bits/stdc++.h>
+using namespace std;                                                 //   output
+int main()                                                            //  10 pointer
+                                                                    //    0x7ffd96eb3e3c ptr variable
+{
+    int x =10;
+     int *ptr =&x;
+    
+     cout<<*ptr<<" "<< "pointer"<<endl;
+     cout<<ptr<<" "<<"ptr variable"<<endl;
+     return 0;
+}
