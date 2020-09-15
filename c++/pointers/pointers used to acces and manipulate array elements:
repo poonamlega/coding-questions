@@ -1,0 +1,19 @@
+//pointers used to acces and manipulate array elements:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,4,5,7,6};
+    int *ptr =arr;
+    *ptr = *ptr+4;
+    cout<<"Array is  arr[]={1,2,4,5,7,6}"<<endl;
+    cout<<*ptr<<"value of *ptr+4"<<endl;
+    *ptr=*(ptr+4);
+    cout<<*ptr<<"value of *(ptr+4)";
+    return 0;
+}
+
+//output
+Array is  arr[]={1,2,4,5,7,6}
+5value of *ptr+4
+7value of *(ptr+4)
