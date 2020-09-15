@@ -17,3 +17,8 @@ int main()
     return 0;
     
 }
+//output
+value of x  10
+value of y 10
+value of add a 20
+value of multiply m 100
