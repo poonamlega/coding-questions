@@ -1,0 +1,19 @@
+//passing the parametr through refernces and operation with x and y
+
+#include<bits/stdc++.h>
+using namespace std;
+int value(int x,int y,int & a,int & m)
+{
+    a= x+y;
+    m=x*y;
+}
+
+int main()
+{
+    int x=10,y=10,a,m;
+    value(x,y,a,m);
+    cout<<"value of x  "<<x<<endl<<"value of y "<<y<<endl;
+    cout<<"value of add a "<< a<<endl<<"value of multiply m "<<m;
+    return 0;
+    
+}
