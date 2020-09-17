@@ -1,0 +1,24 @@
+//use of function in struct:
+
+#include<bits/stdc++.h>
+using namespace std;
+struct point  //struct declared
+{
+    int x;
+    int y;
+    
+};
+
+void  plot(point p)  //function declared
+{
+    cout<<p.x;
+    cout<<endl<<p.y;
+    
+}
+int main()
+{
+    struct point p={10,20};   //struct defined
+  plot(p);                   // argument passed in fun and fun called
+  
+  return 0;
+}
