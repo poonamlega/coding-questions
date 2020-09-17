@@ -1,0 +1,20 @@
+
+//c program for destination initialisation
+
+#include <stdio.h>
+struct point
+{
+    int x;
+    int y;
+    
+};
+
+int main(void) 
+
+{
+    struct point p ={.x=10,.y=30};//is called  destination initialisation
+    printf("%d,%d",p.x,p.y);    //you can skip some initialisation,that will be replaced with default values
+	                             //if u dont initialisation even a single value some random values will be output 
+	return 0;                      //in it order of initialisation dont matter
+}
+
