@@ -1,0 +1,29 @@
+//arrays using structure
+#include<bits/stdc++.h>
+using namespace std;
+struct point
+{
+    int x; 
+    int y;
+};
+
+int main()
+{ int i;
+    point arr[4];
+    for( i =0;i<4;i++)
+    {cout<<endl;
+    arr[i].x=i;    //to access the individual element of an array 
+    arr[i].y=i*10;
+    cout<<arr[i].x <<" "<<arr[i].y;}
+    
+    point p=arr[3];           //to access the individual element of an array
+    cout<<endl<<p.x<<" "<<p.y;
+    return 0;
+}
+
+//output
+0 0
+1 10
+2 20
+3 30
+3 30
