@@ -1,0 +1,42 @@
+
+//pointers in the structure:
+#include<bits/stdc++.h>
+using namespace std;
+struct point
+{
+    int x;
+    int y;
+    
+};                             //-> arrow is used to access the elemnt in pointers
+                                 //p.x and ptr->x same thing
+
+int main()
+{
+    point p={10,20};
+   point  *ptr =& p;
+   
+    cout<<ptr->x<<" "<<p.x<<" simple  value of accessing elemnt in pointer ptr->x";
+    cout<<endl;
+    
+    ptr->x = ptr->y+30;
+    cout<<ptr->x<<" after changes in value through pointers ptr->x = ptr->y+30";
+    cout<<endl;
+    
+    p.x = p.y+30;
+    cout<<ptr->x<<" "<<p.x<<" after changes in value through pointers  p.x = p.y+30";
+    
+    cout<<endl;
+    ptr->x=30;
+    cout<<p.x<<"  value of  ptr->x=30";
+    
+    
+    return 0;
+    
+
+}
+//output
+
+10 10 simple  value of accessing elemnt in pointer ptr->x
+50 after changes in value through pointers ptr->x = ptr->y+30;
+50 50 after changes in value through pointers ptr->x = ptr->y+30;
+30  value of  ptr->x=30
