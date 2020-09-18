@@ -1,0 +1,15 @@
+// private struct or public sturct
+#include<bits/stdc++.h>
+using namespace std;
+struct point
+{private:            //error occurs due to being private now 
+    int x;            // else members are public by default
+    int y;
+};                       // output 10 20
+int main()
+{ point p;
+p.x= 10;
+p.y=20;
+cout<<p.x<<" "<<p.y;
+    return 0;
+}
