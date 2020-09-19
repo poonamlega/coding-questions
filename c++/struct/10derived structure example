@@ -1,0 +1,19 @@
+//derived structure act like class
+
+#include<bits/stdc++.h>
+using namespace std ;
+struct point
+{
+    int x;
+      
+};
+
+struct derived : point{};
+
+int main()
+{
+ derived p;
+ p.x = 10;
+ cout<< p.x;
+ return 0;    
+}
