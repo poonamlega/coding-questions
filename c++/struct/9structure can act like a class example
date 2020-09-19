@@ -1,0 +1,27 @@
+// structure can act like a class example  :
+
+#include<bits/stdc++.h>   //structure can have constructure ,disstructure and a function
+using namespace std ;
+struct point
+ {
+    int x;
+    int y;
+    point (int a,int b)    //created a contructure and initiated the data membbers  
+    {x=a,y=b;}    
+
+     void print()
+    {
+        cout<<x <<y;
+    }
+};
+
+int main()                                    //output 1030
+                                                  //10
+{
+    struct point p(10,30);         //initiated the sturcture point
+    p.print();             //called the print fun with object created of sturcture
+    
+    cout<<endl<<p.x;
+    return 0;
+    
+}
