@@ -1,0 +1,20 @@
+//union basic program
+
+#include<bits/stdc++.h>
+using namespace std;
+union point
+{
+    int x;
+    int y;
+    
+};
+
+int main()
+{   point p;
+p.x =10;
+cout<<p.x<<" "<<p.y<<"  initial value";
+p.y= 20;
+cout<<endl<<p.x<<" "<<p.y<<"  changed value";
+cout<<endl<<sizeof(p)<<"size of object";
+    return 0 ;
+}
