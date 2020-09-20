@@ -1,0 +1,26 @@
+//size of a union 
+
+#include<bits/stdc++.h>
+using namespace std;
+union point
+{
+    int x;
+    int y;
+    double d;
+    int arr[5];
+};
+
+int main()
+{   point p;
+p.x =10;
+cout<<p.x<<" "<<p.y<<"  initial value";
+p.y= 20;
+cout<<endl<<p.x<<" "<<p.y<<"  changed value";
+cout<<endl<<sizeof(p)<<"size of object";  //size of object variate according to the data member having the largest size 
+    return 0 ;
+}
+
+//output
+// 10 10  initial value
+// 20 20  changed value
+// 24size of object
