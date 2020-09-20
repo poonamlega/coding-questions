@@ -1,0 +1,27 @@
+//type punning of union application of union
+
+#include<bits/stdc++.h>
+using namespace std;
+union point
+{
+    int x;
+    int y;
+    float f;
+   // int arr[5];
+   double d;
+};
+
+int main()
+{   point p;
+p.x =100000;
+cout<<p.x<<" "<<p.y<<" "<<p.d<<" "<<p.f<<"  initial value";
+p.f=30;
+cout<<endl<<p.x<<" "<<p.y<<" " <<p.d<<" "<<p.f<<"  changed value";
+cout<<endl<<sizeof(p)<<"size of object";  //size of object variate according to the data member having the largest size 
+    return 0 ;
+}
+
+//output
+// 10 10  initial value
+// 20 20  changed value
+// 24size of object
