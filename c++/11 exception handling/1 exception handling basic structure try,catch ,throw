@@ -1,0 +1,22 @@
+//1 exception handling basic structure try,catch ,throw
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x, y;
+    cin>>x>>y;
+    
+    try{        //try , throw,catch are used for exceptional handling
+        if(y==0)    //try for the function
+        throw 0;   //throw for the variable 
+        cout<<"the result is "<<x/y;
+        }
+    
+    catch(int x)  //catch is used for the handling the exception created 
+    {
+        cout<<"divisor is 0";
+        
+    }
+    return 0;
+}
