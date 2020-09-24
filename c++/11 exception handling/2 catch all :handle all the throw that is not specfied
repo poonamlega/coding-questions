@@ -1,0 +1,30 @@
+//catch all :handle all the throw that is not specfied 
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,y;
+    cin>>x>>y;
+    try{
+        if(x==0)
+        throw 0;
+         if(y==0.0)
+         throw  string("y is 0");
+         if(y<0)
+         throw  string("y is  negative value") ;
+         if(x>100)
+         throw (x+y);
+        
+        cout<<"the result is"<<x/y;
+    }
+    
+    //catch(int e1){ cout<<"the divisor is 0";}
+    catch(string e2){cout<<e2;}
+
+    catch( string e3){cout<<"value is negative ";}
+    catch(...){cout<< "the sum is x+y"<<x+y;} //handle all the throw that is not specfied 
+
+    return 0;
+    
+}
