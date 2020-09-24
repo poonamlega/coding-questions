@@ -1,0 +1,32 @@
+//stack unwinding in exception handling:
+
+#include<bits/stdc++.h>
+using namespace std;               //call1 before
+                                    //before throw
+                                     //successful
+int call1(int s)
+{cout<<"before throw"<<endl;
+    if(s=100)
+    throw string("value is 100");
+    cout<<"exception thrown"<<endl;
+}
+int call2(int x, int y)
+{
+
+int s =x+y;
+cout<<"call1 before"<<endl;
+try
+{call1(s);}
+cout<<"call1 after"<<endl;
+
+}
+int main()
+{
+    int x,y;
+    cin>>x,y;
+    try{
+    call2(x,y);}
+    
+    catch(string e){cout<<"successful";}
+    return 0;
+}
