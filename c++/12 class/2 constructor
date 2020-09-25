@@ -1,0 +1,40 @@
+//constructor 
+
+
+#include<bits/stdc++.h>
+using namespace  std;
+class pom
+{ public:
+         int x;
+         int y;
+         
+                               //constructor 
+                                      //has the same name as the class,
+          pom(int s, int o)  //it help us tto define the data members so tht we dont need to take input for fun again and again 
+    {
+        int x= s;
+        int y=o;
+    }
+int print()
+   {cout<<"sum of input"<<x+y;}
+   
+int compare()
+  {
+    if(x>y)
+    cout<<"X IS greater";
+    else
+    cout<<"y is greater";}
+};
+
+int main()
+{
+    int s,o;
+    cin>>s>>o;
+    
+    pom p (s,o);  //only once object is reqired to pass with valuues
+    p.print();
+    p.compare();
+    cout<<"the job is done";
+    
+    return 0;
+}
