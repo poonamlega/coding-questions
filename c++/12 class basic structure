@@ -1,0 +1,32 @@
+/// 1 class bassic structure
+
+#include<bits/stdc++.h>
+using namespace  std;
+class pom
+{ public:
+         int x;                        //data members
+         int y;
+int print(int x,int y)              //fum of class
+   {cout<<"sum of input"<<x+y;}
+   
+bool compare(int x,int y)
+  {
+    if(x>y)
+    cout<<"x is greater";                       //output sum of input100y is greaterthe job is done
+    else
+    cout<<"y is greater";}
+    
+};
+
+int main()
+{
+    int x,y;
+    cin>>x>>y;
+    
+    pom p;          //object is created
+    p.print(x,y);    //fun of class is called 
+    p.compare(x,y);
+    cout<<"the job is done";
+    
+    return 0;
+}
