@@ -1,0 +1,32 @@
+
+//3  initialiser list 
+#include<bits/stdc++.h>
+using namespace std;
+class test
+
+{public:
+        test(){cout<<"default";}
+        test(int x){cout<<"parameterised";}
+    
+};
+
+class vin
+{
+    test t;
+    public:
+        //   vin():t(78)  //parameterised  //initialiser list
+        //   {}
+          
+        //  vin():t(){}  //default
+           
+        //   vin()
+        //   {t = test(10);}  //defaultparameterised   //constructor
+     vin()
+        { t = test();}  //defaultdefault
+};
+
+int main()
+{   
+vin m;
+    return 0;
+}
