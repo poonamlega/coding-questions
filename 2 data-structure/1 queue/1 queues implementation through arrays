@@ -1,0 +1,134 @@
+queue implementation through arrays
+#include<bits/stdc++.h>
+using namespace std;
+
+struct que
+{
+    int cap,size,front;
+    int *arr;
+    
+    que(int c)
+    {  
+        front=0;
+        cap=c;
+        size=0;
+        arr = new int ;
+        
+    }
+        
+    bool isfull()
+    {
+        return(size==cap);
+    }
+    
+    bool isempty()
+    {
+        return(size==0);
+    }
+    
+    void enque(int x)
+    {
+        if(isfull()){
+        cout<<"\nQueue is full so cannot be enqueed\n"; 
+        return;}
+        else{
+            arr[size]=x;
+            size++;
+        }
+        return;
+    }
+    
+    void display()
+    {
+        if(isempty())
+        {
+            cout<<"queue is empty nothing to display\n ";
+            return;
+        }
+        else{
+             cout<<"the queue element are:";
+            for(int i;i<size;i++)
+            cout<<arr[i]<<" ";
+            cout<<"\n";
+            
+        }
+        return;
+    }
+    
+      void deque()
+      {
+          if(isempty())
+          {
+              cout<<"queue is empty nothing to deque";
+              return;
+          }
+          else
+          { for(int i=0; i<size;i++)
+            arr[i]=arr[i+1];
+              
+              size--;
+          }
+      }
+        
+        int getfront()
+        {
+            if(isempty())
+            {
+                cout<<"the queue is empty so no front elemnt\n";
+                return -1;
+            }
+            else{
+                cout<<"front is "<<arr[front]<<"\n";
+            }
+            
+        }
+        
+        int getrear()
+        {
+            if(isempty())
+            {
+                 cout<<"the queue is empty so no rear elemnt\n";
+                return -1; 
+            }
+            else{
+                cout<<"the rear element is :"<<arr[size-1]<<"\n";
+            }
+        }
+    };
+    
+    int main()
+    {
+        que q =(7);
+        q.enque(20);
+       q.enque(23);
+       q.display();
+       q.enque(30);
+       q.display();
+       q.getfront();
+      q.deque();
+     q.getfront();
+     q.getrear();
+      q.display();
+       q.deque();
+        q.deque();
+        q.getrear();
+        q.display();
+        
+        
+        
+        return 0;
+    }
+    
+    
+    
+    
+
+//output
+ queue element are:20 23 
+the queue element are:20 23 30 
+front is 20
+front is 23
+the rear element is :30
+the queue element are:23 30 
+the queue is empty so no rear elemnt
+queue is empty nothing to display
