@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int bubble(int arr[],int n)
+{
+ for(int i =0;i <n;i++)
+ { for(int j =0;j<n-1;j++)
+ {if(arr[j]>arr[j+1])
+  swap(arr[j],arr[j+1]);}
+ }
+ for(int i=0;i<n;i++)
+  cout<< arr[i];
+}
+ 
+int main()
+{  int n,i;
+
+    //cout<<"no. of elemnt to be sorted ";
+//cin>>n;
+n = 5;
+int x[n];
+    cout<<"write the array ofdata to be sorted";
+    for( i = 0;i <n;i++)
+    {cin>>x[i];
+       cout<<x[i]<<" " ;}
+      
+        bubble(x,5);
+    
+   
+    return 0;
+}
